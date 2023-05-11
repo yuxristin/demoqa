@@ -8,6 +8,8 @@ class SauceDemo(BasePage):
         self.password = WebElement(driver, '#password')
         self.submit = WebElement(driver, '#login-button')
         self.new_url = 'https://www.saucedemo.com/inventory.html'
-        self.tov = WebElement(driver,'#add-to-cart-sauce-labs-backpack ')
-        self.tov2 = WebElement(driver,'#add-to-cart-sauce-labs-bolt-t-shirt')
+        self.tov = WebElement(driver, '#add-to-cart-sauce-labs-backpack ')
+        self.tov2 = WebElement(driver, '#add-to-cart-sauce-labs-bolt-t-shirt')
         self.kor = WebElement(driver, '#shopping_cart_container > a')
+        self.form = WebElement(driver, '#cart_contents_container > div > div.cart_list > div:nth-child(3)')
+
