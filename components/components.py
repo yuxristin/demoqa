@@ -48,6 +48,8 @@ class WebElement:
         self.find_element().send_keys(Keys.CONTROL + 'a') #любое сочетание клавиш
         self.find_element().send_keys(Keys.DELETE)
 
+    def enter(self):
+        self.find_element().send_keys(Keys.ENTER)
 
     def get_dom_attribute(self, name: str):
         value = self.find_element().get_dom_attribute(name)

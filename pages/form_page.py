@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 from components.components import WebElement
 
@@ -17,7 +19,11 @@ class FormPage(BasePage):
         self.btn_close_modal = WebElement(driver, '#closeLargeModal')
         self.hobbies = WebElement(driver, '#hobbiesWrapper > div.col-md-9.col-sm-12 > div:nth-child(1) > label')
         self.CurrentAddress = WebElement(driver, '#currentAddress')
-        self.StateAndCity = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1wa3eu0-placeholder')
+        self.StateAndCity = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue')
+        #self.StateAndCity1 = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1wa3eu0-placeholder')
+        self.validated = WebElement(driver, '#userForm')
+
+
 
 
 
