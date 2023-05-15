@@ -20,6 +20,10 @@ class WebElement:
     def click(self):
         self.find_element().click()
 
+    def click_kcikle(self):
+        for i in range(4):
+            self.find_element().click()
+
     def exist(self):
         try:
             self.find_element()
@@ -83,6 +87,10 @@ class WebElement:
             "window.scrollTo(0,document.body.scrollHeight);",
             self.find_element()
         )
+
+    def check_css(self, style, value=''):
+        return self.find_element().value_of_css_property(style) == value
+
 
 
 

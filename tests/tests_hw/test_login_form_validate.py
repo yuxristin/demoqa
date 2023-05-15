@@ -20,6 +20,20 @@ def test_login_form_validate(browser):
     assert valid.validated.get_dom_attribute('class') == 'was-validated'
 
 
+def test_state_2(browser):
+    form_page = FormPage(browser)
+
+    form_page.visit()
+    time.sleep(2)
+    form_page.btn_state.scroll_to_element()
+    time.sleep(2)
+    form_page.input_state.send_keys('NCR')
+    form_page.input_state.send_keys(Keys.ENTER)
+    time.sleep(2)
+
+
+
+
 
 
 

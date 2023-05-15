@@ -22,6 +22,8 @@ class FormPage(BasePage):
         self.StateAndCity = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue')
         #self.StateAndCity1 = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1wa3eu0-placeholder')
         self.validated = WebElement(driver, '#userForm')
+        self.btn_state = WebElement(driver, '#stateCity-wrapper > div:nth-child(2)')
+        self.input_state = WebElement(driver, '#state > div')
 
 
 
